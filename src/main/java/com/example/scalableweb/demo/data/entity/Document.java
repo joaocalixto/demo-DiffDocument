@@ -6,18 +6,24 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Lob;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Entity
-@Data
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
 public class Document {
 	
+	
+	
+	public Document() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Document(Long id, Long operantionId, byte[] contentBase64) {
+		super();
+		this.id = id;
+		this.operantionId = operantionId;
+		this.contentBase64 = contentBase64;
+	}
+
 	@Id
 	@GeneratedValue
 	private Long id;
