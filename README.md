@@ -18,3 +18,9 @@ run:
 ```
 mvn spring-boot:run
 ```
+## Samples on POSTMAN
+
+go to:
+```
+https://documenter.getpostman.com/view/2128520/RWMEPUBb
+```
